@@ -1,0 +1,18 @@
+Cost_scaling_Factor = if increased, reduces the obstacle inflation and vice versa
+
+sim_time = length of trajectory to be calculated. The higher the sim time the more trajectory is calculated. Not ideal for longer paths. 
+
+sim_granularity = the step size to take between points on a trajectory. the smaller the better. Better resolution. But can be tuned.
+
+Vx, Vy, Vth = sample rate for collecting velocity dont touch these, navigation crashed on virtual machine. Keep at 1. 
+
+planner_Frequency = The rate in hz to run the planning loop.
+
+controller_frequency = the rate in hz to run the control loop and send velocity commands to base.
+
+planner_patience = (seconds) how long the planner will wait to determine a plan before beginning space clearing operations
+
+controller_patience = seconds, how long the controller will wait without receiving valid controls.
+
+update_Frequency = the frequency to update the map
+publish_frequency = the frequency to publish the map data. 
